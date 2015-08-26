@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Nasil Calisir ?"
+            android:textStyle="bold"
+            android:id="@+id/how_to_work_textView"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:autoText="false"
+            android:textColor="@color/material_blue_grey_800"
+            android:textSize="25dip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Sosyal Medyada bulmak istediğin kişinin mail adresini yaz."
+            android:textStyle="bold"
+            android:id="@+id/step_one_text"
+            android:autoText="false"
+            android:textColor="@color/white"
+            android:textSize="20dip"
+            android:layout_below="@+id/how_to_work_textView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="39dp" />
+
+
+
+        <TextView
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Anında tüm hesapları bul."
+            android:textStyle="bold"
+            android:id="@+id/step_three_text"
+            android:autoText="false"
+            android:textColor="@color/white"
+            android:textSize="20dip"
+            android:layout_below="@+id/step_one_text"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <EditText
+            android:id="@+id/search_input_editText"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+
+            android:background="@drawable/search_input"
+            android:ems="10"
+            android:hint="Email Adresini Giriniz..."
+            android:inputType="textEmailAddress"
+
+            android:layout_below="@+id/step_three_text"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <at.markushi.ui.CircleButton
+            android:layout_width="120dip"
+            android:layout_height="120dip"
+            android:src="@drawable/ic_action_tick2"
+            app:cb_color="#FFFFFF"
+            app:cb_pressedRingWidth="8dip"
+            android:id="@+id/search_button_apply"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
